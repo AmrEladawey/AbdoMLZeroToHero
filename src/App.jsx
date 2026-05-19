@@ -12,7 +12,7 @@ const roadmap = [
         id: '1.1',
         title: 'How Computers Work',
         details: 'Memory, CPUs, and execution. Source: CrashCourse Computer Science',
-        link: 'https://www.youtube.com/watch?v=O5nskjZ_GoI'
+        link: 'https://www.youtube.com/watch?v=CxGSnA-RTsA&t=28s'
       },
       {
         id: '1.2',
@@ -41,19 +41,27 @@ const roadmap = [
         id: '2.1',
         title: 'Python Basics',
         details: 'Variables, loops, and logic in a gamified way. Source: LearnPython.today or CheckiO',
-        link: 'https://learnpython.today/'
+        links: [
+          { href: 'https://www.youtube.com/watch?v=K5KVEU3aaeQ', label: 'Python Tutorial |\n'},
+          { href: 'https://checkio.org/', label: 'CheckiO |\n' },
+          { href: 'https://learnpython.today/', label: 'LearnPython.today'  }
+        ]
       },
       {
         id: '2.2',
         title: 'Data Manipulation (Pandas)',
         details: 'Open, view, and manipulate spreadsheets in Python. Source: Kaggle micro-courses',
-        link: 'https://www.kaggle.com/learn/pandas'
+        links: [
+          { href: 'https://www.youtube.com/watch?v=RBSUwFGa6Fk', label: 'What is Data Science? |\n' },
+          { href: 'https://www.kaggle.com/learn/pandas', label: 'Kaggle Pandas Course |\n' },
+          { href: 'https://drive.google.com/drive/folders/1EotEs_FnyoGxuLTvwhfxocUybBjsq0vA?usp=drive_link', label: 'Pandas from University' }
+        ]
       },
       {
         id: '2.3',
         title: 'Data Cleaning',
         details: 'Handle missing values and scale numbers.',
-        link: 'https://pandas.pydata.org/docs/user_guide/missing_data.html'
+        link: 'https://drive.google.com/drive/folders/18MlCiK3PYlmVFTqOGwD9UqlXzFaj8brc?usp=drive_link'
       }
     ],
     quiz: {
@@ -69,15 +77,9 @@ const roadmap = [
       {
         id: '3.1',
         title: 'Visualizing Math',
-        details: 'Connect calculus and linear algebra to data grids. Source: 3Blue1Brown',
-        link: 'https://www.youtube.com/watch?v=aircAruvnKk'
+        details: 'Linear algebra',
+        link: 'https://youtu.be/ZFVFtVbeerI?si=6jDY9pYlh3b4WjhY'
       },
-      {
-        id: '3.2',
-        title: 'Stats for ML',
-        details: 'Refresh probability, variance, and distribution basics.',
-        link: 'https://www.khanacademy.org/math/statistics-probability'
-      }
     ],
     quiz: {
       title: 'Quiz',
@@ -93,7 +95,7 @@ const roadmap = [
         id: '4.1',
         title: 'The ML Landscape',
         details: 'Understand regression vs classification.',
-        link: 'https://scikit-learn.org/stable/tutorial/statistical_inference/supervised_learning.html'
+        link: 'https://www.coursera.org/specializations/machine-learning-introduction'
       },
       {
         id: '4.2',
@@ -107,34 +109,17 @@ const roadmap = [
       prompt: "I just learned the basics of supervised machine learning and Scikit-Learn. First, give me 3 general real-world scenarios and ask me to identify if they are regression or classification problems. Then, ask me to write the basic Scikit-Learn Python code to initialize a Linear Regression model, train it on mock variables X_train and y_train, and make a prediction. Evaluate my answers."
     }
   },
-  {
-    id: 'level-5',
-    title: 'Level 5: The Chemistry Capstone',
-    description: 'Apply ML to chemistry with RDKit, Kaggle data, and a simple model.',
-    tasks: [
-      {
-        id: '5.1',
-        title: 'Cheminformatics (RDKit)',
-        details: 'Translate SMILES strings into machine-readable chemical data.',
-        link: 'https://www.rdkit.org/docs/index.html'
-      },
-      {
-        id: '5.2',
-        title: 'The Kaggle Playground',
-        details: 'Download AqSolDB for solubility prediction.',
-        link: 'https://www.kaggle.com/datasets/thedevastator/aqsoldb'
-      },
-      {
-        id: '5.3',
-        title: 'Training a Simple Model',
-        details: 'Train a Random Forest with Scikit-Learn and evaluate accuracy.',
-        link: 'https://scikit-learn.org/stable/modules/ensemble.html#random-forests'
-      }
-    ],
-    quiz: {
-      title: 'Quiz',
-      prompt: "I am working on my capstone ML chemistry project using RDKit and Scikit-Learn. Give me a 3-step coding challenge. Step 1: Ask me to write the code to convert a SMILES string into an RDKit molecule object. Step 2: Ask me to write the code to extract a feature from it, like molecular weight. Step 3: Ask me to write the code to pass that feature into a Scikit-Learn Random Forest model. Guide me step-by-step and check my code at each stage."
-    }
+ {
+    id: 'Top Secret',
+    title: 'Top Top Top Secret Level',
+    description: 'DONT OPEN IT',
+    tasks: [ {
+        id: 'secret-1',
+        title: 'DO NOT OPEN THIS !!!!',
+        details: 'NOOOOOOOO',
+        link: 'https://drive.google.com/file/d/15PnlKmbr4UtfZHIKOMWSlEbAiTUA55vQ/view?usp=drive_link'
+      }  
+    ]
   }
 ];
 
@@ -276,12 +261,12 @@ function App() {
     <main className="page-shell">
       <div className="corner-cheer">
         <span className="corner-emoji">👾</span>
-        <div className="cheer-bubble">You got this, Abdo!</div>
+        <div className="cheer-bubble">han5eeb wla eehhhh!</div>
       </div>
       <div className="hero-panel">
-        <div className="hero-badge">AbdoMLZeroToHero</div>
-        <h1>Pixel Quest for ML</h1>
-        <p>Follow a gamified step-by-step machine learning journey from zero to hero.</p>
+        <div className="hero-badge">Bodz</div>
+        <h1>ML Roadmap</h1>
+        <p>From zero to hero in machine learning!</p>
         <div className="progress-bar">
           <span>Progress</span>
           <div className="meter">
@@ -334,7 +319,15 @@ function App() {
                       </div>
                       <p>{task.details}</p>
                       <div className="task-footer">
-                        <a href={task.link} target="_blank" rel="noreferrer">Open source</a>
+                        <div className="task-links">
+                          {task.links ? (
+                            task.links.map((l) => (
+                              <a key={l.href} href={l.href} target="_blank" rel="noreferrer">{l.label}</a>
+                            ))
+                          ) : (
+                            <a href={task.link} target="_blank" rel="noreferrer">Open source</a>
+                          )}
+                        </div>
                         <input
                           type="checkbox"
                           checked={!!checked[task.id]}
@@ -344,17 +337,19 @@ function App() {
                     </label>
                   ))}
                 </div>
-                <div className="quiz-card">
-                  <button className="quiz-toggle" onClick={() => toggleQuiz(level.id)}>
-                    {level.quiz.title}
-                    <span>{openQuiz[level.id] ? '▾' : '▸'}</span>
-                  </button>
-                  {openQuiz[level.id] && (
-                    <div className="quiz-body">
-                      <p>{level.quiz.prompt}</p>
-                    </div>
-                  )}
-                </div>
+                {level.quiz && (
+                  <div className="quiz-card">
+                    <button className="quiz-toggle" onClick={() => toggleQuiz(level.id)}>
+                      {level.quiz.title}
+                      <span>{openQuiz[level.id] ? '▾' : '▸'}</span>
+                    </button>
+                    {openQuiz[level.id] && (
+                      <div className="quiz-body">
+                        <p>{level.quiz.prompt}</p>
+                      </div>
+                    )}
+                  </div>
+                )}
               </div>
             )}
           </article>
